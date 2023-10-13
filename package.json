@@ -1,0 +1,42 @@
+{
+  "name": "flick-node-sdk",
+  "version": "0.0.1",
+  "description": "A Typescript interface for interacting with APIs from Flick.",
+  "engines": {
+    "node": ">=16"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "lib"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -rf dist/*",
+    "release": "npm run build && npm publish --access public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flick-network/flick-node-sdk.git"
+  },
+  "keywords": [
+    "flick",
+    "flick-sdk",
+    "node-sdk"
+  ],
+  "author": "Flick.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/flick-network/flick-node-sdk/issues"
+  },
+  "homepage": "https://github.com/flick-network/flick-node-sdk#readme",
+  "dependencies": {
+    "@types/axios": "^0.14.0",
+    "axios": "^1.5.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  }
+}
